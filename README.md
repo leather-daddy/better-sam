@@ -2,6 +2,9 @@ Remade: Anonimu'#9775
 
 # SAM Software Automatic Mouth
 
+## Changelist
+- 2023/11/03 Added filename option, it will default to sam.wav if not added.
+
 ## What is SAM?
 
 Sam is a very small Text-To-Speech (TTS) program written in C, that
@@ -21,10 +24,6 @@ It aims for low memory impact and file size which is the reason I want
 to avoid the 
 [Emscripten conversion](http://simulationcorner.net/index.php?page=sam)
 by Stefan (which weights about 414kb).
-
-#Description of repository
-
-As you know , everyone is looking for a sam version with download one , so i made one. Enjoy of this code , its not 100% open-source but you can use it at your own risk.
 
 ## Original docs.
 

@@ -121,8 +121,8 @@
    *
    * @return void
    */
-  function RenderBuffer (audiobuffer) {
-    var filename = 'sam.wav';
+  function RenderBuffer (audiobuffer, filename) {
+    var filename = filename ? `${filename}.wav` : "sam.wav";
 
     // Calculate buffer size.
     var realbuffer = new Uint8Array(
@@ -3724,8 +3724,9 @@
      *
      * @return void
      */
-    this.download = function (text, phonetic) {
-      RenderBuffer(this$1.buf8(text, phonetic));
+    this.download = function (text, phonetic, filename) {
+      console.log(text, phonetic)
+      RenderBuffer(this$1.buf8(text, phonetic), filename);
     };
   }
 
